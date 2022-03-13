@@ -4,7 +4,7 @@ This API is built using nodejs and GraphQL.
 
 ## URL
 
-https:
+https: https://tanishq-invoices-api.herokuapp.com/
 
 ## Requirements
 
@@ -28,29 +28,35 @@ $ npm install
 
 # Instructions to use API
 
-URL: 
+URL: https://tanishq-invoices-api.herokuapp.com/storeshop
+URL: https://tanishq-invoices-api.herokuapp.com/invoicedetails:
+
 
 ## Query
 ### add shop
 ```
 mutation{
- 	addShop(
-     		name:"Tane Kaku",
- 		address: "IIT Bhubaneswar",
- 		email: "tom@gmail.com",
- 		phone: "2355454545"
-   	){
-     		name
-     	address
-     	email
-     	phone
-   }
- }
+  addShop(
+   
+    name:"Tane Kaku",
+    address: "IIT Bhubaneswar",
+    email: "tom@gmail.com",
+    phone: "2355454545"
+    
+  ){
+    name
+    address
+    email
+    phone
+    
+  }
+}
+
 ```
 
 
 ### get shop detail by id
-
+```
 {
   shop(id:"5"){
     id,
@@ -59,9 +65,10 @@ mutation{
     address
   }
 }
+```
 
 ### get shop list
-
+```
 {
   shops{
     id,
@@ -70,10 +77,10 @@ mutation{
     address
   }
 }
-
+```
 
 ### edit shop datails
-
+```
  mutation{
   	editShop(id:"2",name:"Tanishq Agarwal"){
       id,
@@ -83,13 +90,13 @@ mutation{
       phone
     }
   }
-
+```
 
 
 
 
 ### add new invoice buyer
-
+```
 mutation{
   addBuyer(
     name:"Tanishq Agarwal",
@@ -133,10 +140,11 @@ mutation{
     
   }
 }
-
+```
 
 
 ### get shop details by id
+```
   {
     buyer(id:"2"){
       id,
@@ -155,11 +163,11 @@ mutation{
       status
     }
   }
-
+```
 
 
 ### get buyers list
-
+```
 {
   buyers{
     id,
@@ -180,9 +188,10 @@ mutation{
     
   }
 }
-
+```
 
 ### edit shop datails
+```
   mutation{
   	EditBuyer(id:"2",name:"Tanishq Agarwal"){
       id,
@@ -201,12 +210,13 @@ mutation{
       status
     }
   }
-
-// Delete invoice buyer
-
+```
+###  Delete invoice buyer
+```
 mutation{
  deletebuyer(id:"1"){
   id,
   name
   
 }}
+```
