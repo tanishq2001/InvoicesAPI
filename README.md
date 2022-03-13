@@ -31,7 +31,7 @@ $ npm install
 ```
 URL for stores: https://tanishq-invoices-api.herokuapp.com/storeshop
 URL for invoices: https://tanishq-invoices-api.herokuapp.com/invoicedetails:
-
+```
 
 ## Query
 ### add shop
