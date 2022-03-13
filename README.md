@@ -34,19 +34,18 @@ URL:
 ### add shop
 
 $ mutation{
-  addShop(
-    name:"Tane Kaku",
-    address: "IIT Bhubaneswar",
-    email: "tom@gmail.com",
-    phone: "2355454545"
-  ){
-    name
-    address
-    email
-    phone
-    
-  }
-}
+$ 	addShop(
+$     		name:"Tane Kaku",
+$ 		address: "IIT Bhubaneswar",
+$ 		email: "tom@gmail.com",
+$ 		phone: "2355454545"
+$   	){
+$     		name
+$     	address
+$     	email
+$     	phone
+$   }
+$ }
 
 
 
