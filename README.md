@@ -31,16 +31,14 @@ $ npm install
 URL: 
 
 ## Query
-//add shop
+### add shop
 
-mutation{
+$ mutation{
   addShop(
-   
     name:"Tane Kaku",
     address: "IIT Bhubaneswar",
     email: "tom@gmail.com",
     phone: "2355454545"
-    
   ){
     name
     address
@@ -51,7 +49,8 @@ mutation{
 }
 
 
-// get shop detail by id
+
+### get shop detail by id
 
 {
   shop(id:"5"){
@@ -62,10 +61,8 @@ mutation{
   }
 }
 
+### get shop list
 
-
-
-// get shop list
 {
   shops{
     id,
@@ -75,7 +72,8 @@ mutation{
   }
 }
 
-// edit shop datails
+
+### edit shop datails
 
  mutation{
   	editShop(id:"2",name:"Tanishq Agarwal"){
@@ -90,7 +88,8 @@ mutation{
 
 
 
-// add new invoice buyer
+
+### add new invoice buyer
 
 mutation{
   addBuyer(
@@ -137,7 +136,8 @@ mutation{
 }
 
 
-// get shop details by id
+
+### get shop details by id
   {
     buyer(id:"2"){
       id,
@@ -158,7 +158,8 @@ mutation{
   }
 
 
-// get buyers list
+
+### get buyers list
 
 {
   buyers{
@@ -181,7 +182,8 @@ mutation{
   }
 }
 
-// edit shop datails
+
+### edit shop datails
   mutation{
   	EditBuyer(id:"2",name:"Tanishq Agarwal"){
       id,
