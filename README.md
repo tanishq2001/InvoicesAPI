@@ -32,7 +32,7 @@ URL:
 
 ## Query
 ### add shop
-
+```
 mutation{
  	addShop(
      		name:"Tane Kaku",
@@ -46,7 +46,7 @@ mutation{
      	phone
    }
  }
-
+```
 
 
 ### get shop detail by id
