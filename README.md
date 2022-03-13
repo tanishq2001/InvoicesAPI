@@ -28,8 +28,9 @@ $ npm install
 
 # Instructions to use API
 
-URL: https://tanishq-invoices-api.herokuapp.com/storeshop
-URL: https://tanishq-invoices-api.herokuapp.com/invoicedetails:
+```
+URL for stores: https://tanishq-invoices-api.herokuapp.com/storeshop
+URL for invoices: https://tanishq-invoices-api.herokuapp.com/invoicedetails:
 
 
 ## Query
